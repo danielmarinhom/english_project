@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Inika', serif;
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #000020;
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img {
+    width: 2em;
+}
+
+/* Navbar Styling */
+#navbar {
+    padding: 1em;
+    background-color: #000020;
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#navbar a {
+    font-size: 1.2em;
+    color: #F0F2EF;
+    cursor: pointer;
+    margin: 0.5em;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+#navbar a:focus,
+#navbar a:hover {
+    color: #fff;
+}
+#navbar a:focus:after,
+#navbar a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+#navbar a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+#etechas {
+    padding: auto;
+    width: 50px;
+    height: 50px;
+    transform: scale(1.2);
+}
+
+/* Content Styling */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titleContainer {
+    margin: 0;
+    margin-top: 1em;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.textContainer {
+    margin: 2em;
+    font-size: 1.2em;
+    align-items: center;
+    width: 70%;
+}
+
+/* Responsive Text */
+@media (max-width: 600px) {
+    #navbar a {
+        font-size: 1em;
+    }
+    #etechas {
+        width: 40px;
+        height: 40px;
+    }
+    .titleContainer {
+        font-size: 1.2em;
+    }
+    .textContainer {
+        font-size: 1em;
+    }
+}
+
+/* Calculator Styling */
+#duasCalculadoras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.calculadoraDiv {
+    background-color: #d6d2d2;
+    display: flex;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+.labelCalculadora {
+    margin: 1em 0;
+    font-size: 3em; /* Increased font size for calculator titles */
+    font-family: 'Inika', serif;
+}
+.inputsClass {
+    margin: 1em 0;
+    padding: 1em;
+    width: 80%;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: #fdfdfd;
+    font-family: 'Inika', serif;
+    font-size: 1em;
+}
+.inputsClass::placeholder {
+    font-size: 1.2em; /* Increased placeholder font size */
+}
+.exibicoes {
+    background-color: #fff9f9;
+    display: flex;
+    padding: 1em;
+    margin: 1em 0;
+    width: 80%;
+    border-radius: 20px;
+    font-family: 'Inika', serif;
+    font-size: 1em;
+}
+.exibicoesDiv {
+    width: 100%;
+}
+button {
+    background-color: #fff9f9;
+    margin: 1em 0;
+    padding: 1em;
+    width: 50%;
+    border-radius: 20px;
+    border-width: 0px;
+    font-family: 'Inika', serif;
+}
+button:hover {
+    transform: scale(1.05);
+}
+#inputsDiv {
+    font-family: 'Inika', serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/* Responsive Styling */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #navbar a {
+        font-size: 1.5em;
+    }
+    #etechas {
+        width: 60px;
+        height: 60px;
+    }
+    .titleContainer {
+        font-size: 2em;
+    }
+    .textContainer {
+        font-size: 1.3em;
+    }
+    .calculadoraDiv {
+        width: 80%;
+    }
+}
+@media (min-width: 1025px) {
+    #navbar a {
+        font-size: 1.7em;
+    }
+    #etechas {
+        width: 75px;
+        height: 75px;
+    }
+    .titleContainer {
+        font-size: 2.5em;
+    }
+    .textContainer {
+        font-size: 1.5em;
+    }
+    .calculadoraDiv {
+        width: 60%;
+    }
+}
