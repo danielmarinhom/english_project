@@ -141,6 +141,12 @@ footer img {
     font-size: 3em; /* Increased font size for calculator titles */
     font-family: 'Inika', serif;
 }
+#integrantes{
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .inputsClass {
     margin: 1em 0;
     padding: 1em;
